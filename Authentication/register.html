@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <a href="../">
+            <h2 class="text-center" style="margin-top: 3vw;">Back to the home</h2>
+          </a>
+          <br><br>
+        <div class="form-group">
+            <label for="registerUsernameInputField" aria-describedby="usernameHelp">Username:</label>
+            <small id="usernameHelp" class="form-text text-muted" style="display: inline;">Optional.</small>
+            <input type="text" class="form-control" id="registerUsernameInputField">
+            <small id="usernameSubtitleHelp" class="form-text text-muted">
+                The username will appear on your home page. If you don't want to choose, your email will appear instead of your username.
+            </small>
+        </div>
+        <div class="form-group">
+            <label for="registerMailInputField">Email address:</label>
+            <input type="email" class="form-control" id="registerEmailInputField" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">
+                We'll never share your email with anyone else.
+            </small>
+        </div>
+        <div class="form-group">
+            <label for="registerPasswordInputField">Password:</label>
+            <input type="password" class="form-control" id="registerPasswordInputField">
+        </div>
+        <div class="form-group">
+            <label for="registerProfilePhotoFormControlFileInputField" aria-describedby="profilePhotoHelp">
+                Profile Photo:
+                <small id="profilePhotoHelp" class="form-text text-muted" style="display: inline;">Optional.</small>
+            </label>
+            <input type="file" class="form-control-file" accept="image/*" id="registerProfilePhotoFormControlFileInputField">
+        </div>
+        <br>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="registerRememberMeCheckboxInputField">
+            <label class="form-check-label" for="registerRememberMeCheckboxInputField">I have read and agree to the Privacy Policy. (In maintenance)</label>
+        </div>
+        <br>
+        <button type="button" id="registerButton" class="btn btn-primary">Sign Up</button>
+    </div>
+
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script defer src="register.js"></script>
+</body>
+</html>
