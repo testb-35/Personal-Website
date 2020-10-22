@@ -1,14 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyA_LdzCOcwHaMuhTk4G_7vv3i3x0wOXKaw",
-    authDomain: "personalwebsite-38d63.firebaseapp.com",
-    databaseURL: "https://personalwebsite-38d63.firebaseio.com",
-    projectId: "personalwebsite-38d63",
-    storageBucket: "personalwebsite-38d63.appspot.com",
-    messagingSenderId: "982231030814",
-    appId: "1:982231030814:web:3fddb8d4b16b31179de20f",
-    measurementId: "G-12K9G01BBY"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
 };
-
 
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
