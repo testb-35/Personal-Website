@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+            font-size: 3vw;
+        }
+        p {
+            font-size: 3vw;
+        }
+    </style>
+    <h2 style="margin-top: 10vw; color: rgba(216, 16, 16, 0.548);">
+        Access Denied
+    </h2>
+    <p>You can not view the page without signing in.</p>
+    <br>
+    <p id="redirectionParagraph"></p>
+    <script>
+        var secondsCount = 3;
+        const redirectionParagraphRef = document.getElementById("redirectionParagraph");
+        setInterval(function(){
+            redirectionParagraphRef.innerHTML = "You will be redirected in " + secondsCount;
+            secondsCount--;
+            if (secondsCount == 0) {
+                window.location.replace("../");
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

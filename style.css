@@ -1,0 +1,9 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-image: url('Resources/background-wp.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
