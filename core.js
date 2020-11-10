@@ -25,10 +25,6 @@ auth.onAuthStateChanged(function(user){
         authenticatedUserNavbarDropdownItemLinks[2].onclick = () => auth.signOut();
     } else {
         userNavbarDropdownMenuLinkRef.innerHTML = "Join the network";
-        projectsNavbarDropdownItemLinks.forEach(item => item.onclick = function() {
-            swal("Access Denied!", "You can not view the page without signing in.", "error");
-            return false;
-        });
         authenticatedUserNavbarDropdownItemLinks.forEach(item => item.style.display = "none");
     }
 });
