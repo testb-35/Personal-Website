@@ -5,6 +5,12 @@ const tableBody = document.querySelector("#todoAppListBody");
 const listLengthHeader = document.querySelector("#todoListLengthHeader");
 
 submitButton.addEventListener('click', function() {
+    
+    if (inputTextField.value.length === 0) {
+        alert('Input length should be bigger than 0');
+        return false;
+    }
+    
     const trNode = document.createElement("tr");
     const thNode = document.createElement("th");
     thNode.scope = "row";
