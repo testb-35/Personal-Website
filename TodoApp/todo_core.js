@@ -4,8 +4,7 @@ const clearListButton = document.querySelector("#clearListButton");
 const tableBody = document.querySelector("#todoAppListBody");
 const listLengthHeader = document.querySelector("#todoListLengthHeader");
 
-submitButton.addEventListener('click', function() {
-    
+submitButton.addEventListener('click', function() { 
     if (inputTextField.value.length === 0) {
         alert('Input length should be bigger than 0');
         return false;
